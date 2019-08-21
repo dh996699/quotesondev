@@ -608,6 +608,13 @@ a {
 body {
   background-color: black; }
 
+.page-container {
+  padding: 20px; }
+
+.leftquote,
+.rightquote {
+  display: none; }
+
 .about-entry-content {
   font-family: "Exo", sans-serif;
   font-weight: 300;
@@ -620,8 +627,51 @@ body {
 .about-entry-content a:hover {
   color: #090; }
 
-.page-container {
-  padding: 20px; }
+.content-page-container {
+  padding-top: 30px; }
+
+.site-footer {
+  padding-left: 20px; }
+
+.primary-menu menu {
+  margin: 0;
+  padding: 0; }
+
+.footer-main-navigation {
+  color: #0c0;
+  list-style-type: none;
+  position: absolute;
+  bottom: 10px;
+  left: 10px; }
+
+.footer-main-navigation ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0;
+  margin: 0; }
+
+.footer-main-navigation li {
+  margin: 1rem;
+  border-right: 1px solid white;
+  padding-right: 30px; }
+
+.footer-main-navigation a,
+.footer-copy-right a {
+  color: #0c0; }
+
+.footer-main-navigation a:hover,
+.footer-copy-right a:hover {
+  color: #090;
+  text-decoration: none; }
+
+.footer-copy-right {
+  color: white;
+  margin-left: 20px; }
 
 /*--------------------------------------------------------------
 # Media

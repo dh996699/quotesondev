@@ -24,12 +24,12 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 				<img class="logo" alt="quotes on Dev logo" src='<?php echo get_template_directory_uri() . '/logo/qod-logo.svg' ?>'>
-				
+				</a>
 				</div><!-- .site-branding -->
 				<!-- <?php var_dump (get_template_directory_uri() . '/logo/qod-logo.svg'); ?>; -->
 				
-
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
