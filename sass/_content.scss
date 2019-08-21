@@ -1,0 +1,90 @@
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+/* Posts and pages */
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 $base__space-unit;
+}
+
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: $base__space-unit 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 $base__space-unit;
+}
+body {
+	background-color: black;
+}
+
+// About Page configuration ***** START
+
+.about-entry-content{
+	font-family: $font__main;
+    font-weight: $font__weight;
+    font-style: $font__style;
+}
+
+.about-entry-content a {
+	color:$font__green_color;
+	text-decoration: none;
+}
+
+.about-entry-content a:hover {
+	color:#090;
+}
+
+// Front Page configuration ***** START
+
+.page-container {
+	padding: 20px;
+}
+
+.leftquote,
+.rightquote {
+
+// display: none;
+
+}
+
+// Front Page configuration End
+///////////////////////////////////////
+///////////////////////////////////////
+
+
+// About Page configuration End
+///////////////////////////////////////
+///////////////////////////////////////
+
+
+// Archive Page configuration ***** START
+
+
+// Archive Page configuration End
+///////////////////////////////////////
+///////////////////////////////////////
+
+// Footer Page configuration ***** START
+
+
+// Footer Page configuration End
+///////////////////////////////////////
+///////////////////////////////////////
