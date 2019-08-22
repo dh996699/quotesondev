@@ -71,3 +71,21 @@ table {
   margin: 0 0 $base__space-unit;
   width: 100%;
 }
+
+li a {
+  color:$font__green_color;
+  font-weight: $font__weight;
+  font-style: $font__style;
+  text-decoration: none;
+}
+
+li a:visited {
+  color:$font__green_color;
+}
+
+li a:hover {
+  color:#090;
+  text-decoration:none;
+}
+
+

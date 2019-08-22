@@ -1,5 +1,5 @@
 html {
-	font-family: sans-serif;
+	font-family: 'Exo',sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -43,12 +43,15 @@ template {
 
 a {
 	background-color: transparent;
+	color:$font__green_color;
+	text-decoration: none;
 }
 
 a:active,
 a:hover {
 	outline: 0;
 }
+
 
 abbr[title] {
 	border-bottom: 1px dotted;

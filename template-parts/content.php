@@ -9,10 +9,9 @@ $source = get_post_meta(get_the_ID(),'_qod_quote_source', true);
 $source_url = get_post_meta(get_the_ID(),'_qod_quote_source_url', true);
 
 ?>
+<section class="content-container">
+<article class="entry-article" id="post-<?php the_ID(); ?>" <?php post_class(); ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>
-
-	<section class="content-page-container">
 	<div class="entry-content">
 		<?php the_content(); ?>
 	</div><!-- .entry-content -->
@@ -35,12 +34,11 @@ $source_url = get_post_meta(get_the_ID(),'_qod_quote_source_url', true);
 	<?php else: ?>
 		<span class="source"></span>
 	<?php endif; ?>
-
-	</section>
+	</div>  <!--entry meta-->
 </article><!-- #post-## -->
-
+</section>
 <?php if (is_home() || is_single()):?>
 
-	<button type="button" id="new-quote-button"> Show Me Another!</button>
+	<button class="show-me-another" type="button" id="new-quote-button"> Show Me Another!</button>
 
 <?php endif; ?>

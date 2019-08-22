@@ -13,9 +13,9 @@
 				<div class="footer-site-info">
 
 				<nav id="footer-site-navigation" class="footer-main-navigation" role="navigation">
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<p class="footer-copy-right"> Brought to you by <a href="#"> David Huynh </a> </p>
-		
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );
+					 echo '<p class="footer-copy-right"> Brought to you by <a href="#"> David Huynh </a> </p>';
+					?>
 				</nav><!-- #site-navigation -->
 
 				</div><!-- .site-info -->

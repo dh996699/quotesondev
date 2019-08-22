@@ -1,3 +1,5 @@
+import { CLIENT_RENEG_LIMIT } from "tls";
+
 (function ($) {
 
 
@@ -18,15 +20,22 @@
                 method: 'get',
                 url: qod_api.rest_url + 'wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1'
             }).done(function (data) {
-                console.log(data);
+
+
+                const newdata = data[0];
+                let newcontent = newdata.content.rendered;
+                // console.log(newcontent);
+
+                console.log('tdhf');
+
             }).fail(function (err) {
                 console.log('error', err);
-            });
-
-            //2: post request for wp/v2/posts
-
+            })
 
         }); //end of ready
+
+        //2: post request for wp/v2/posts
+
     });
 
 })(jQuery);

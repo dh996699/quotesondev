@@ -60,8 +60,6 @@ get_header(); ?>
 						'largest'  => 1,
 						'unit'  => 1,
 						'format' => 'list',
-
-
 					));
 					wp_tag_cloud($args);
 					?>
