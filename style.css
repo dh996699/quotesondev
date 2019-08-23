@@ -678,17 +678,22 @@ body {
       -ms-flex-align: baseline;
           align-items: baseline; }
 
-.source,
-.source a {
-  color: #00cc00;
+.source {
+  color: white;
   font-size: 20px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
   text-decoration: none; }
 
-.source:hover,
-.source a:hover {
+.source-url {
+  color: #00cc00;
+  text-decoration: none; }
+
+.source-url:visited {
+  color: #00cc00; }
+
+.source-url:hover {
   color: #090;
   text-decoration: none; }
 

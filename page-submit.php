@@ -26,13 +26,18 @@ get_header(); ?>
 
 						<div>
 							<label for="quote-content"> Quote </label>
-							<textarea name="quote-name" id="quote-content" cols="20" row="3" required> </textarea>
+							<textarea name="quote-name" id="quote-content" cols="10" row="3" required> </textarea>
 
 						</div>
 
 						<div>
-							<label for="quote-source-url"> Where did you find this quote?   </label>
-							<input type="url" name="quote-source-url" id="quote-source-url"> </input>
+                            <label for="quote-source">Where did you find this quote? (e.g. book name)</label>
+                            <input type="text" name="quote-source" id="quote-source">
+                        </div>
+
+						<div>
+							<label for="quote-source-url"> Where did you find this quote? (URL to the quote)   </label>
+							<input type="url" name="quote-source-url" id="quote-source-url">
 
 						</div>
 
@@ -42,15 +47,14 @@ get_header(); ?>
 			
 					</div>
 
-			<?php endif; ?>
-				<p> Sorry, you must be logged in to submit a quote </p>
-
-				<p>
-
+					<?php else: ?>
+					<p> Sorry, you must be logged in to submit a quote </p>
 					<a href="<?php echo wp_login_url(); ?> ">
 					click here to login
 					</a>
-				</p>
+
+			<?php endif; ?>
+				
 			</section>
 
 		</main><!-- #main -->
