@@ -31,22 +31,71 @@
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
-body {
-	background-color: black;
-}
 
+.page,
+.home,
+.single-post
+{
+	background-color: black;
+	padding: 30px;
+
+	
+}
 
 // Front Page configuration ***** START
 
-.page-container {
+.page-container,
+.about-page-container,
+.footer-site-info,
+.site-main
+{
 	padding: 1px;
+	 @include desktop {
+		margin: 0 auto;
+		max-width: 1080px;
+		padding: 3% 10%;
+		width: 100%;
+	 }
 }
 
-.leftquote,
-.rightquote {
+.page-id-213, //page-about 
+.home,
+.single-post
 
-display: none;
+{
+	
+	@include desktop {
+	position: relative;
+	margin-top: 5rem;
+	margin-right: 190px;
+	margin-left: 190px;
 
+	&:before,
+	&:after {
+		color: $font__green_color;
+		font-family: 'FontAwesome';
+		font-size: 125px;
+		line-height: 125px;
+		position: absolute;
+		top: 0;
+		
+	}
+
+	&:before {
+		left: 150px;
+		top: 37%;
+		content: "\f10d";
+	}
+
+	&:after {
+		content: "\f10e";
+		top:37%;
+		right: 150px;
+	}	
+}
+
+
+	
 }
 
 // Front Page configuration End
@@ -84,94 +133,124 @@ display: none;
 ///////////////////////////////////////
 
 
-// Content.php Page configuration ***** START
-
-.show-me-another {
-background-color: transparent;
-border: 2px solid #0c0;
-border-radius: 3px;
-color: #0c0;
-font-size: 1rem;
-line-height: 1;
-padding: .75rem 2.25rem;
- @include tablet {
-	font-size: 1.25rem;
- }
-}
-
-.show-me-another:hover {
-	color:#090;
-	border: 2px solid #090;
-	text-decoration: none;
-
-}
-
-.content-container {
-	padding-top: 30px;
-}
-
-.entry-article p {
-	font-size: 20px;
-	margin: 20px 0 25px;
-	@include tablet {
-		font-size: 28px;
-		font-weight: 300;
-	}
-
-}
-
-.entry-meta {
-	display: flex;
-	justify-content: baseline;
-	align-items: baseline;
-	// flex-wrap: wrap;
-}
-
-.entry-title {
-	font-size: 20px;
-	padding-top: 20px;
-	padding-bottom: 40px;
-	align-items: baseline;
-	font-family: 'Exo';
-	font-weight: 300;
-	flex-basis: 1;
-}
-
-.source
+// Content.php and single-post Page configuration ***** START
+.single-post,
+.home
 {
-	color: white;
-	font-size: 20px;
-	align-items: baseline;
-	text-decoration: none;
-	font-style: italic;
-	font-weight:300;
-	flex-basis: 1;
+
+		.show-me-another-container {
+			@include desktop {
+				display: flex;
+			}
+
+		}
+
+		.show-me-another {
+		background-color: transparent;
+		border: 2px solid #0c0;
+		border-radius: 3px;
+		color: #0c0;
+		font-size: 1rem;
+		line-height: 1;
+		padding: .75rem 2.25rem;
+		@include tablet {
+			font-size: 1.25rem;
+		}
+		@include desktop {
+			margin: 0 auto;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+
+		}
+		}
+
+		.show-me-another:hover {
+			color:#090;
+			border: 2px solid #090;
+			text-decoration: none;
+
+		}
+
+		.content-container {
+			padding-top: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.entry-article p {
+			font-size: 20px;
+			margin: 20px 0 25px;
+			@include tablet {
+				font-size: 28px;
+				font-weight: 300;
+			}
+			@include desktop {
+				font-size: 40px;
+			}
+
+		}
+
+		.entry-meta {
+			display: flex;
+			justify-content: baseline;
+			align-items: baseline;
+			// flex-wrap: wrap;
+				
+		}
+
+
+		.entry-title {
+			font-size: 20px;
+			padding-top: 20px;
+			padding-bottom: 40px;
+			align-items: baseline;
+			font-family: 'Exo';
+			font-weight: 300;
+			flex-basis: 1;
+			@include desktop {
+				padding-left: 80px;
+			}
+		}
+
+		.source
+		{
+			color: white;
+			font-size: 20px;
+			align-items: baseline;
+			text-decoration: none;
+			font-style: italic;
+			font-weight:300;
+			flex-basis: 1;
+		}
+
+		.source a {
+			color:$font__green_color;
+			text-decoration: none;
+
+		}
+
+		.source a:visited {
+			color:$font__green_color;
+		}
+
+		.source a:hover
+		{
+			color:#090;
+			text-decoration: none;
+		}
+
 }
-
-.source a {
-	color:$font__green_color;
-	text-decoration: none;
-
-}
-
-.source a:visited {
-	color:$font__green_color;
-}
-
-.source a:hover
-{
-	color:#090;
-	text-decoration: none;
-}
-
 // Content.php Page configuration End
 ///////////////////////////////////////
 ///////////////////////////////////////
 
 // Archive Page configuration ***** START
 
+
 .archive-header h1 {
-	margin-top: 40px;
+	margin-top: 48px;
 }
 
 
@@ -208,6 +287,41 @@ padding: .75rem 2.25rem;
 	// text-align: left;
 }
 
+
+.page-id-217 {
+
+	@include desktop {
+		position: relative;
+		margin-top: 5rem;
+		margin-right: 190px;
+		margin-left: 190px;
+	
+		&:before,
+		&:after {
+			color: $font__green_color;
+			font-family: 'FontAwesome';
+			font-size: 125px;
+			line-height: 125px;
+			position: absolute;
+			top: 0;
+			
+		}
+	
+		&:before {
+			left: 150px;
+			top: 15%;
+			content: "\f10d";
+		}
+	
+		&:after {
+			content: "\f10e";
+			top:15%;
+			right: 150px;
+		}	
+
+	}
+
+}
 
 
 // Archive Page configuration End
@@ -311,7 +425,6 @@ padding: .75rem 2.25rem;
 
 .prev,
 .next
-
 {
 	font-weight: 300;
 }
@@ -328,6 +441,11 @@ padding: .75rem 2.25rem;
 	@include tablet {
 		display: flex;
 		justify-content: baseline;
+		align-items: baseline;
+
+	}
+	@include desktop {
+		justify-content: flex-end;
 		align-items: baseline;
 
 	}
@@ -409,6 +527,7 @@ padding:0px;
 
 .submit-title {
 	font-size: 28px;
+	margin-top: 48px;
 }
 .quote-submission-wrapper label {
 	font-size: 15px;
@@ -443,8 +562,43 @@ padding:0px;
 	padding: 10px 35px;
 	margin-top: 10px;
 }
+ 
+
+.page-id-220 { 
+
+	@include desktop {
+		position: relative;
+		margin-top: 5rem;
+		margin-right: 190px;
+		margin-left: 190px;
+	
+		&:before,
+		&:after {
+			color: $font__green_color;
+			font-family: 'FontAwesome';
+			font-size: 125px;
+			line-height: 125px;
+			position: absolute;
+			top: 0;
+			
+		}
+	
+		&:before {
+			left: 150px;
+			top: 28%;
+			content: "\f10d";
+		}
+	
+		&:after {
+			content: "\f10e";
+			top:28%;
+			right: 150px;
+		}	
+
+	}
 
 
-
+	
+}
 
 // Submit a Quote Page configuration End

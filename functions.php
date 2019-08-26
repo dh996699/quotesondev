@@ -57,7 +57,7 @@ add_filter( 'stylesheet_uri', 'qod_minified_css', 10, 2 );
  */
 function qod_scripts() {
 	wp_enqueue_style( 'qod-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'qod-fontaws', '<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">' );
+	// wp_enqueue_style( 'qod-fontaws', '<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">' );
 	// wp_enqueue_style( 'qod-stylegoogle', get_stylesheet_uri() );
 
 	wp_enqueue_script('jquery');
@@ -79,6 +79,12 @@ function qod_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'qod_scripts' );
 
+//font awsome 
+add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
+function enqueue_load_fa() {
+wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
+}
+
 /**
  * Custom functions that act independently of the theme templates.
  */
@@ -98,3 +104,5 @@ require get_template_directory() . '/inc/metaboxes.php';
  * Custom WP API modifications.
  */
 require get_template_directory() . '/inc/api.php';
+
+

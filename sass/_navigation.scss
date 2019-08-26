@@ -125,6 +125,20 @@ a {
 	}
 }
 
+.site-header {
+	
+	@include desktop {
+	display:flex;
+}
+}
+
+.site-branding {
+
+	@include desktop {
+		width: 100%;
+	}
+}
+
 .logo {
 
 	width:300px;
@@ -135,6 +149,11 @@ a {
 	}
 	@include desktop {
 		width:700px;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: auto;
+    	margin-right: auto;
 	}
 
 }

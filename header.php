@@ -31,14 +31,3 @@
 				<!-- <?php var_dump (get_template_directory_uri() . '/logo/qod-logo.svg'); ?>; -->
 				
 			</header><!-- #masthead -->
-
-			<div id="content" class="site-content">
-				<div class="leftquote"> 
-					<h1> <i class="fa fa-quote-left"></i></h1>
-				</div>
-				<div class="quote-content"> 
-
-				</div>
-				<div class="rightquote">
-					<h1> <i class="fa fa-quote-right"></i> </h1> 
-				</div>
