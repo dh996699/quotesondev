@@ -633,7 +633,8 @@ a {
 
 .page,
 .home,
-.single-post {
+.single-post,
+.error404 {
   background-color: black;
   padding: 30px; }
 
@@ -1086,6 +1087,21 @@ a {
       content: "\f10e";
       top: 28%;
       right: 150px; } }
+
+.error-page-content fieldset {
+  border: none; }
+
+.error-page-content input[type="search"] {
+  margin-bottom: 25px;
+  border-style: inset;
+  border-width: 2px;
+  border: 2px solid #00cc00;
+  background-color: transparent;
+  height: auto;
+  width: 250px;
+  color: white;
+  padding: 5px, 10px;
+  font-size: 20px; }
 
 /*--------------------------------------------------------------
 # Media

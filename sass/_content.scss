@@ -34,7 +34,8 @@
 
 .page,
 .home,
-.single-post
+.single-post,
+.error404
 {
 	background-color: black;
 	padding: 30px;
@@ -602,3 +603,21 @@ padding:0px;
 }
 
 // Submit a Quote Page configuration End
+
+.error-page-content fieldset {
+	border:none;
+}
+.error-page-content input[type="search"] {
+	margin-bottom: 25px;
+	border-style: inset;
+	border-width: 2px;
+	border: 2px solid $font__green_color;
+	background-color: transparent;
+	height: auto;
+	width: 250px;
+	color: white;
+	padding: 5px, 10px;
+	font-size: 20px;
+
+
+}
