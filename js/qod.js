@@ -16,8 +16,6 @@
         $('#new-quote-button').on('click', function (event) {
             event.preventDefault();
 
-            console.log('click');
-
             lastPage = document.URL;
 
             $.ajax({
@@ -28,7 +26,6 @@
                 // the post data returned from wp-json
                 const post = data[0];
                 console.log(post);
-
                 const slug = post.slug;
 
                 //TODO add url with home_url and slug
@@ -40,24 +37,26 @@
                 let newquotesourceurl = post._qod_quote_source_url;
 
                 if (newquotesource.length > 0 && newquotesourceurl.length > 0) {
-                    console.log('quote source and source url exist');
                     $('.source').html('<a class=“source-url” href=“' + newquotesourceurl + '”>, ' + newquotesource + ' </a>');
                 }
-                // else if(){
+                else if (newquotesource.length > 0) {
+                    $('.source').html('<p class=“source">, ' + newquotesource + ' </p>');
+                }
 
-                // }
-                // else {
-
-                // }
+                else if (newquotesourceurl.length > 0) {
+                    $('.source').html('<a class=“source-url” href=“' + newquotesourceurl + '”>, ' + newtitle + ' </a>');
+                }
+                else {
+                    $('.source').html('<p class=“source"></p>');
+                }
 
                 $('.entry-article').html(newcontent);
                 $('.entry-title').html(newtitle);
-                // $('.source').html(newquotesource);
-                // $('.source-url').html(newquotesourceurl);
 
-                // console.log(newtitle);
-                console.log(newquotesource);
-                console.log(newquotesourceurl);
+                if (newtitle > 0) {
+                    $('.entry-title').html('<h2 class=“entry-title”>' + newtitle + ', </h2>');
+                }
+
 
                 //TODO update the browser url with history.pushState
                 history.pushState(null, null, url);
@@ -83,11 +82,8 @@
             let newContent = $('#quote-content').val();
             let newSource = $('#quote-source').val();
             let newSourceUrl = $('#quote-source-url').val();
+            // let successMessage = 'Thanks, your quote submitsion was recived!'
 
-            console.log(newAuthor);
-            console.log(newContent);
-            console.log(newSource);
-            console.log(newSourceUrl);
 
             $.ajax({
                 method: 'post',
@@ -102,15 +98,19 @@
                     xhr.setRequestHeader('X-WP-Nonce', qod_api.wpapi_nonce);
                 }
             }).done(function () {
-                // newauthor => $title.rendered;
 
                 // TODO slideUp the form and append a message saying your quote has been submitted
-                $('#quote-submission-form').slideUp();
                 // TODO add a message for user feedback so they know the form was submitted
+
                 $('#quote-submission-form').slideUp();
+                $('#quote-submission-form').html('<div class=“success-message”> Thank you! Your message has been submitted. </div>');
+
+
+                // TODO append a user message or alert a message saying an error happened
+
             }).fail(function (error) {
                 console.log('error', error);
-                // TODO append a user message or alert a message saying an error happened
+
             });
         });
 

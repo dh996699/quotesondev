@@ -34,7 +34,7 @@ get_header(); ?>
 					<div class="archive-entry-meta">
 						<?php  
 						echo '<h2 class="archive-entry-title">';
-						echo "―";
+						echo "― ";
 						the_title();
 						echo '</h2>'; 
 						?>

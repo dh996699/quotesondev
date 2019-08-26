@@ -21,7 +21,7 @@ get_header(); ?>
 
 						<div>
 							<label for="quote-author"> Author of Quote </label>
-							<input type="text" name="quote_author" id="quote-author" required>
+							<input type="text" name="quote-author-input" id="quote-author" required></input>
 						</div>
 
 						<div>
@@ -32,19 +32,19 @@ get_header(); ?>
 
 						<div>
                             <label for="quote-source">Where did you find this quote? (e.g. book name)</label>
-                            <input type="text" name="quote-source" id="quote-source">
+                            <input type="text" name="quote-source" id="quote-source"></input>
                         </div>
 
 						<div>
-							<label for="quote-source-url"> Where did you find this quote? (URL to the quote)   </label>
-							<input type="url" name="quote-source-url" id="quote-source-url">
+							<label for="quote-source-url"> Where did you find this quote? (URL to the quote e.g. http://www.google.com)</label>
+							<input type="url" name="quote-source-url" id="quote-source-url"></input>
 
 						</div>
 
-						<input type="submit" value="Submit Quote">
-
+						<input id="submit-quote-button" type="submit" value="Submit Quote"></input>
+						
 						</form>
-			
+						
 					</div>
 
 					<?php else: ?>
@@ -54,6 +54,9 @@ get_header(); ?>
 					</a>
 
 			<?php endif; ?>
+
+			<div class="success-message" id="success-message">
+			</div>
 				
 			</section>
 
