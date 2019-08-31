@@ -626,6 +626,40 @@ padding:0px;
 
 // Submit a Quote Page configuration End
 
+.error-404-not-found {
+
+	@include desktop {
+		position: relative;
+		margin-top: 5rem;
+	
+		&:before,
+		&:after {
+			color: $font__green_color;
+			font-family: 'FontAwesome';
+			font-size: 125px;
+			line-height: 125px;
+			position: absolute;
+			top: 0;
+			
+		}
+	
+		&:before {
+			left: -190px;
+			top: 0%;
+			content: "\f10d";
+		}
+	
+		&:after {
+			content: "\f10e";
+			top:0%;
+			right: -190px;
+		}	
+
+	}
+
+}
+
+
 .error-page-content fieldset {
 	border:none;
 }
@@ -641,5 +675,24 @@ padding:0px;
 	padding: 5px, 10px;
 	font-size: 20px;
 
+
+}
+.fa-search {
+	color: $font__green_color;
+	background: transparent;
+    border: none;
+}
+
+.fieldset-container button {
+	border: none;
+    background: transparent;
+    font-size: 1rem;
+	line-height: 1;
+}
+
+.fieldset-container {
+	display: flex;
+	justify-content: baseline;
+	width:100%;
 
 }

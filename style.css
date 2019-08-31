@@ -1105,6 +1105,26 @@ a {
   padding: 10px 35px;
   margin-top: 10px; }
 
+@media (min-width: 1080px) {
+  .error-404-not-found {
+    position: relative;
+    margin-top: 5rem; }
+    .error-404-not-found:before, .error-404-not-found:after {
+      color: #00cc00;
+      font-family: 'FontAwesome';
+      font-size: 125px;
+      line-height: 125px;
+      position: absolute;
+      top: 0; }
+    .error-404-not-found:before {
+      left: -190px;
+      top: 0%;
+      content: "\f10d"; }
+    .error-404-not-found:after {
+      content: "\f10e";
+      top: 0%;
+      right: -190px; } }
+
 .error-page-content fieldset {
   border: none; }
 
@@ -1119,6 +1139,26 @@ a {
   color: white;
   padding: 5px, 10px;
   font-size: 20px; }
+
+.fa-search {
+  color: #00cc00;
+  background: transparent;
+  border: none; }
+
+.fieldset-container button {
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  line-height: 1; }
+
+.fieldset-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  width: 100%; }
 
 /*--------------------------------------------------------------
 # Media
