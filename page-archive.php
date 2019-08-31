@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<section>
+			<section class="archive-container">
 				<header class="archive-header">
 					<h1 class="archive-title"><?php the_title(); ?></h1>
 				</header>
@@ -64,8 +64,8 @@ get_header(); ?>
 					wp_tag_cloud($args);
 					?>
 			
-
+			</section>	
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+						
 <?php get_footer(); ?>

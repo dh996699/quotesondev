@@ -1,8 +1,8 @@
 /*!
 Theme Name: Quotes on Dev
-Theme URI: http://underscores.me/
-Author: RED Academy
-Author URI: http://www.redacademy.com
+Theme URI: http://davidhonghuynh.com/project/dev/
+Author: David Huynh
+Author URI: http://davidhonghuynh.com/project/dev/
 Description: A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -642,7 +642,7 @@ a {
 .about-page-container,
 .footer-site-info,
 .site-main {
-  padding: 1px; }
+  padding: 20px; }
   @media (min-width: 1080px) {
     .page-container,
     .about-page-container,
@@ -667,7 +667,7 @@ a {
       position: absolute;
       top: 0; }
     .page-id-213:before {
-      left: 80px;
+      left: 0px;
       top: 37%;
       content: "\f10d"; }
     .page-id-213:after {
@@ -747,12 +747,14 @@ a {
 .single-post .entry-article p,
 .home .entry-article p {
   font-size: 20px;
-  margin: 20px 0 25px; }
+  margin: 20px 0 25px;
+  min-width: 400px; }
   @media (min-width: 620px) {
     .single-post .entry-article p,
     .home .entry-article p {
       font-size: 28px;
-      font-weight: 300; } }
+      font-weight: 300;
+      min-width: 550px; } }
   @media (min-width: 1080px) {
     .single-post .entry-article p,
     .home .entry-article p {
@@ -761,7 +763,7 @@ a {
       margin-top: 5rem;
       margin-right: 190px;
       margin-left: 190px;
-      min-width: 600px; }
+      min-width: 650px; }
       .single-post .entry-article p:before, .single-post .entry-article p:after,
       .home .entry-article p:before,
       .home .entry-article p:after {
@@ -838,6 +840,27 @@ a {
   color: #090;
   text-decoration: none; }
 
+@media (min-width: 1080px) {
+  .archive-container {
+    position: relative;
+    margin-top: 5rem;
+    min-width: 700px; }
+    .archive-container:before, .archive-container:after {
+      color: #00cc00;
+      font-family: 'FontAwesome';
+      font-size: 125px;
+      line-height: 125px;
+      position: absolute;
+      top: 0; }
+    .archive-container:before {
+      left: -180px;
+      top: 7%;
+      content: "\f10d"; }
+    .archive-container:after {
+      content: "\f10e";
+      top: 7%;
+      right: -150px; } }
+
 .archive-header h1 {
   margin-top: 48px; }
 
@@ -872,29 +895,6 @@ a {
 .tag-archives li {
   margin: 5px;
   padding: 2px; }
-
-@media (min-width: 1080px) {
-  .page-id-217 {
-    position: relative;
-    margin-top: 5rem;
-    margin-right: 190px;
-    margin-left: 190px;
-    min-width: 600px; }
-    .page-id-217:before, .page-id-217:after {
-      color: #00cc00;
-      font-family: 'FontAwesome';
-      font-size: 125px;
-      line-height: 125px;
-      position: absolute;
-      top: 0; }
-    .page-id-217:before {
-      left: 0px;
-      top: 18%;
-      content: "\f10d"; }
-    .page-id-217:after {
-      content: "\f10e";
-      top: 18%;
-      right: 50px; } }
 
 .archive-page-title {
   border-bottom: 1px dotted #fff;
@@ -1050,6 +1050,26 @@ a {
   color: white;
   margin-left: 10px; }
 
+@media (min-width: 1080px) {
+  .submit-container {
+    position: relative;
+    margin-top: 5rem; }
+    .submit-container:before, .submit-container:after {
+      color: #00cc00;
+      font-family: 'FontAwesome';
+      font-size: 125px;
+      line-height: 125px;
+      position: absolute;
+      top: 0; }
+    .submit-container:before {
+      left: -190px;
+      top: 0%;
+      content: "\f10d"; }
+    .submit-container:after {
+      content: "\f10e";
+      top: 0%;
+      right: -190px; } }
+
 .submit-title {
   font-size: 28px;
   margin-top: 48px; }
@@ -1080,28 +1100,6 @@ a {
   font-weight: 300;
   padding: 10px 35px;
   margin-top: 10px; }
-
-@media (min-width: 1080px) {
-  .page-id-220 {
-    position: relative;
-    margin-top: 5rem;
-    margin-right: 190px;
-    margin-left: 190px; }
-    .page-id-220:before, .page-id-220:after {
-      color: #00cc00;
-      font-family: 'FontAwesome';
-      font-size: 125px;
-      line-height: 125px;
-      position: absolute;
-      top: 0; }
-    .page-id-220:before {
-      left: 60px;
-      top: 28%;
-      content: "\f10d"; }
-    .page-id-220:after {
-      content: "\f10e";
-      top: 28%;
-      right: 60px; } }
 
 .error-page-content fieldset {
   border: none; }

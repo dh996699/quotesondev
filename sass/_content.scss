@@ -50,7 +50,8 @@
 .footer-site-info,
 .site-main
 {
-	padding: 1px;
+	padding: 20px;
+
 	 @include desktop {
 		margin: 0 auto;
 		max-width: 1080px;
@@ -92,8 +93,6 @@
 		right: 80px;
 	}	
 }
-
-
 	
 }
 
@@ -181,10 +180,11 @@
 		.entry-article p {
 			font-size: 20px;
 			margin: 20px 0 25px;
-			min-width: 650px;
+			min-width: 400px;
 			@include tablet {
 				font-size: 28px;
 				font-weight: 300;
+				min-width: 550px;
 			}
 			@include desktop {
 				font-size: 40px;
@@ -192,8 +192,7 @@
 				margin-top: 5rem;
 				margin-right: 190px;
 				margin-left: 190px;
-
-				
+				min-width: 650px;
 
 				&:before,
 				&:after {
@@ -207,7 +206,7 @@
 					}
 
 					&:before {
-						left: 0px;
+						left: -170px;
 						top: 10%;
 						content: "\f10d";
 					}
@@ -277,6 +276,42 @@
 
 // Archive Page configuration ***** START
 
+.archive-container {
+
+		@include desktop {
+			position: relative;
+			margin-top: 5rem;
+			// margin-right: 190px;
+			// margin-left: 190px;
+
+			min-width: 700px;
+		
+			&:before,
+			&:after {
+				color: $font__green_color;
+				font-family: 'FontAwesome';
+				font-size: 125px;
+				line-height: 125px;
+				position: absolute;
+				top: 0;
+				
+			}
+		
+			&:before {
+				left: -180px;
+				top: 7%;
+				content: "\f10d";
+			}
+		
+			&:after {
+				content: "\f10e";
+				top:7%;
+				right: -150px;
+			}	
+	
+		}
+	
+	}
 
 .archive-header h1 {
 	margin-top: 48px;
@@ -316,43 +351,6 @@
 	// text-align: left;
 }
 
-
-.page-id-217 {
-
-	@include desktop {
-		position: relative;
-		margin-top: 5rem;
-		margin-right: 190px;
-		margin-left: 190px;
-
-		min-width: 600px;
-	
-		&:before,
-		&:after {
-			color: $font__green_color;
-			font-family: 'FontAwesome';
-			font-size: 125px;
-			line-height: 125px;
-			position: absolute;
-			top: 0;
-			
-		}
-	
-		&:before {
-			left: 0px;
-			top: 18%;
-			content: "\f10d";
-		}
-	
-		&:after {
-			content: "\f10e";
-			top:18%;
-			right: 50px;
-		}	
-
-	}
-
-}
 
 
 // Archive Page configuration End
@@ -544,12 +542,6 @@ padding:0px;
 }
 
 
-
-// .footer-main-navigation {    Make a line under the foort
-//     border-bottom-style: solid;
-//     border-bottom-color: #fff;
-//     border-bottom-width: 2px;
-// }
 // Footer Page configuration End
 ///////////////////////////////////////
 ///////////////////////////////////////
@@ -561,8 +553,6 @@ padding:0px;
 		@include desktop {
 			position: relative;
 			margin-top: 5rem;
-			margin-right: 190px;
-			margin-left: 190px;
 		
 			&:before,
 			&:after {
@@ -576,20 +566,18 @@ padding:0px;
 			}
 		
 			&:before {
-				left: 60px;
-				top: 28%;
+				left: -190px;
+				top: 0%;
 				content: "\f10d";
 			}
 		
 			&:after {
 				content: "\f10e";
-				top:28%;
-				right: 60px;
+				top:0%;
+				right: -190px;
 			}	
 	
 		}
-
-	min-width: 750px;
 }
 
 .submit-title {
@@ -630,7 +618,6 @@ padding:0px;
 	margin-top: 10px;
 }
  
-
 
 // Submit a Quote Page configuration End
 
