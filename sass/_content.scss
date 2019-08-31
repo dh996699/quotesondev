@@ -59,9 +59,7 @@
 	 }
 }
 
-.page-id-213, //page-about 
-.home,
-.single-post
+.page-id-213 //page-about 
 
 {
 	
@@ -83,7 +81,7 @@
 	}
 
 	&:before {
-		left: 150px;
+		left: 0px;
 		top: 37%;
 		content: "\f10d";
 	}
@@ -91,7 +89,7 @@
 	&:after {
 		content: "\f10e";
 		top:37%;
-		right: 150px;
+		right: 80px;
 	}	
 }
 
@@ -183,15 +181,45 @@
 		.entry-article p {
 			font-size: 20px;
 			margin: 20px 0 25px;
+			min-width: 650px;
 			@include tablet {
 				font-size: 28px;
 				font-weight: 300;
 			}
 			@include desktop {
 				font-size: 40px;
-			}
+				position: relative;
+				margin-top: 5rem;
+				margin-right: 190px;
+				margin-left: 190px;
 
-		}
+				
+
+				&:before,
+				&:after {
+					color: $font__green_color;
+					font-family: 'FontAwesome';
+					font-size: 125px;
+					line-height: 125px;
+					position: absolute;
+					top: 0;
+		
+					}
+
+					&:before {
+						left: 0px;
+						top: 10%;
+						content: "\f10d";
+					}
+
+					&:after {
+						content: "\f10e";
+						top:10%;
+						right: -170px;
+					}	
+							}
+
+						}
 
 		.entry-meta {
 			display: flex;
@@ -296,6 +324,8 @@
 		margin-top: 5rem;
 		margin-right: 190px;
 		margin-left: 190px;
+
+		min-width: 600px;
 	
 		&:before,
 		&:after {
@@ -309,15 +339,15 @@
 		}
 	
 		&:before {
-			left: 150px;
-			top: 15%;
+			left: 0px;
+			top: 18%;
 			content: "\f10d";
 		}
 	
 		&:after {
 			content: "\f10e";
-			top:15%;
-			right: 150px;
+			top:18%;
+			right: 50px;
 		}	
 
 	}
@@ -526,6 +556,42 @@ padding:0px;
 
 // Submit a Quote Page configuration ***** START
 
+.submit-container {
+
+		@include desktop {
+			position: relative;
+			margin-top: 5rem;
+			margin-right: 190px;
+			margin-left: 190px;
+		
+			&:before,
+			&:after {
+				color: $font__green_color;
+				font-family: 'FontAwesome';
+				font-size: 125px;
+				line-height: 125px;
+				position: absolute;
+				top: 0;
+				
+			}
+		
+			&:before {
+				left: 60px;
+				top: 28%;
+				content: "\f10d";
+			}
+		
+			&:after {
+				content: "\f10e";
+				top:28%;
+				right: 60px;
+			}	
+	
+		}
+
+	min-width: 750px;
+}
+
 .submit-title {
 	font-size: 28px;
 	margin-top: 48px;
@@ -565,42 +631,6 @@ padding:0px;
 }
  
 
-.page-id-220 { 
-
-	@include desktop {
-		position: relative;
-		margin-top: 5rem;
-		margin-right: 190px;
-		margin-left: 190px;
-	
-		&:before,
-		&:after {
-			color: $font__green_color;
-			font-family: 'FontAwesome';
-			font-size: 125px;
-			line-height: 125px;
-			position: absolute;
-			top: 0;
-			
-		}
-	
-		&:before {
-			left: 150px;
-			top: 28%;
-			content: "\f10d";
-		}
-	
-		&:after {
-			content: "\f10e";
-			top:28%;
-			right: 150px;
-		}	
-
-	}
-
-
-	
-}
 
 // Submit a Quote Page configuration End
 
