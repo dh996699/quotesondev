@@ -60,15 +60,27 @@
 	 }
 }
 
-.page-id-213 //page-about 
 
-{
-	
+
+// Front Page configuration End
+///////////////////////////////////////
+///////////////////////////////////////
+
+
+// About Page configuration ***** START
+
+.about-page-container{
+
+	@include tablet {
+		min-width: 600px;
+		padding-left: 5px;
+	}
+
 	@include desktop {
 	position: relative;
-	margin-top: 5rem;
-	margin-right: 190px;
-	margin-left: 190px;
+	margin-top: 1rem;
+
+	min-width: 750px;
 
 	&:before,
 	&:after {
@@ -82,26 +94,19 @@
 	}
 
 	&:before {
-		left: 0px;
-		top: 37%;
+		left: -180px;
+		top: 15%;
 		content: "\f10d";
 	}
 
 	&:after {
 		content: "\f10e";
-		top:37%;
-		right: 80px;
+		top: 15%;
+		right: -80px;
 	}	
 }
 	
 }
-
-// Front Page configuration End
-///////////////////////////////////////
-///////////////////////////////////////
-
-
-// About Page configuration ***** START
 
 .about-entry-header {
 	padding:5px;
@@ -123,7 +128,7 @@
 }
 
 .about-entry-title {
-	margin-top: 48px;
+	margin-top: 10px;
 }
 
 // About Page configuration End

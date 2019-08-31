@@ -1,8 +1,8 @@
 /*!
 Theme Name: Quotes on Dev
-Theme URI: http://davidhonghuynh.com/project/dev/
-Author: David Huynh
-Author URI: http://davidhonghuynh.com/project/dev/
+Theme URI: http://underscores.me/
+Author: RED Academy
+Author URI: http://www.redacademy.com
 Description: A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -653,27 +653,31 @@ a {
       padding: 3% 10%;
       width: 100%; } }
 
+@media (min-width: 620px) {
+  .about-page-container {
+    min-width: 600px;
+    padding-left: 5px; } }
+
 @media (min-width: 1080px) {
-  .page-id-213 {
+  .about-page-container {
     position: relative;
-    margin-top: 5rem;
-    margin-right: 190px;
-    margin-left: 190px; }
-    .page-id-213:before, .page-id-213:after {
+    margin-top: 1rem;
+    min-width: 750px; }
+    .about-page-container:before, .about-page-container:after {
       color: #00cc00;
       font-family: 'FontAwesome';
       font-size: 125px;
       line-height: 125px;
       position: absolute;
       top: 0; }
-    .page-id-213:before {
-      left: 0px;
-      top: 37%;
+    .about-page-container:before {
+      left: -180px;
+      top: 15%;
       content: "\f10d"; }
-    .page-id-213:after {
+    .about-page-container:after {
       content: "\f10e";
-      top: 37%;
-      right: 80px; } }
+      top: 15%;
+      right: -80px; } }
 
 .about-entry-header {
   padding: 5px; }
@@ -691,7 +695,7 @@ a {
   color: #090; }
 
 .about-entry-title {
-  margin-top: 48px; }
+  margin-top: 10px; }
 
 @media (min-width: 1080px) {
   .single-post .show-me-another-container,
