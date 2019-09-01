@@ -691,8 +691,10 @@ padding:0px;
 }
 
 .fieldset-container {
-	display: flex;
-	justify-content: baseline;
-	width:100%;
+display: flex;
+align-items: center;
+}
 
+.search-submit {
+	margin-bottom: 30px;
 }
